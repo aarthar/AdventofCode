@@ -11,11 +11,9 @@ class NumberCompare
       if @counter == (@s_length - 1)
         if @s_array[@counter] == @s_array[0]
           @sum += @s_array[@counter].to_i
-          puts @sum
-          return @sum
+          puts "Your sum is #{@sum}."
         else
-          puts @sum
-          return @sum
+          puts "Your sum is #{@sum}."
         end
       else
         if @s_array[@counter] == @s_array[@counter + 1]
@@ -30,7 +28,7 @@ class NumberCompare
 
 end
 
-puts "Please enter your string: "
+print "Please enter your string: "
 string = gets.chomp
 
 NumberCompare.new(string)
